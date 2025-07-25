@@ -1,0 +1,12 @@
+{
+  "name": "clickify",
+  "version": "1.0.0",
+  "description": "My custom CSS utility and button framework",
+  "main": "dist/style.css",
+  "files": [
+    "dist"
+  ],
+  "keywords": ["css", "ui", "buttons", "utility"],
+  "author": "Arun",
+  "license": "MIT"
+}

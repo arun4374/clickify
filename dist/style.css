@@ -1,0 +1,350 @@
+:root{
+    --font:'Segoe UI', sans-serif, Tahoma, Geneva, Verdana;
+    
+    /* ====== Font Weight ======*/
+
+    --font-weight-sm:400;
+    --font-weight-md:500;
+    --font-weight-lg:600;
+    --font-weight-xlg:900;
+
+    /* ====== Font Size =======*/
+
+    --font-sm:small;
+    --font-md:medium;
+    --font-lg:large;
+
+    /* ==== Opacity Range ====*/
+
+    --opacity-l:0.9;
+    --opacity-m:0.6;
+    --opacity-h:0.3;
+}
+
+.btn{
+    padding:0.6rem 1.3rem;
+    font-family: var(--font);
+    text-align: center;
+    border: none;
+    border-radius: 4rem;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(1, 143, 190);
+    display: block;
+    margin: 30px;
+}
+
+
+/*==== Button Text Size =====*/
+
+
+.btn.tx-sm{
+    font-size: var(--font-sm);
+    font-weight: var(--font-weight-sm);
+}
+.btn.tx-md{
+    font-size: var(--font-md);
+    font-weight: var(--font-weight-md);
+}
+.btn.tx-lg{
+    font-size: var(--font-lg);
+    font-weight: var(--font-weight-lg);
+}
+.btn.tx-xlg{
+    font-size: var(--font-lg);
+    font-weight: var(--font-weight-xlg);
+    letter-spacing: 0.123rem;
+}
+
+.btn.disable{
+    cursor:not-allowed;
+    opacity: 0.7;
+}
+
+/* ==== Button Hover Effect ====*/
+
+
+.btn.hover-op-l:hover{
+    opacity:var(--opacity-l);
+}
+.btn.hover-op-m:hover{
+    opacity: var(--opacity-m);
+}
+.btn.hover-op-h:hover{
+    opacity: var(--opacity-h);
+}
+
+
+
+/*==== Text Color ====*/
+
+.btn.clr-red{
+    color: rgb(255, 37, 37);
+}
+.btn.clr-green{
+    color: green;
+}
+.btn.clr-blue{
+    color: rgb(4, 116, 190);
+}
+.btn.clr-black{
+    color: black;
+}
+.btn.clr-orange{
+    color: rgb(255, 145, 0);
+}
+
+/* =======  Premade Buttons ====== */
+
+.btn-hover-1 {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: black;
+    border-radius: 20px;
+    display: block;
+    border: 0px;
+    font-weight: 600;
+    box-shadow: 0px 0px 14px -7px #c7a717;
+    background-image: linear-gradient(45deg, #1950e6 0%, #4aacee  51%, #1164e0  100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    &:hover{
+        background-position:right center;
+    
+        color: #fff;
+        text-decoration: none;
+    }
+    &:active{
+        transform: scale(0.95);
+    }
+}
+
+
+/* ==== Sliding Button Effects ====*/
+
+
+.btn-slide {
+ outline: none;
+ cursor: pointer;
+ border: none;
+ padding: 0.9rem 2rem;
+ margin: 0;
+ font-family: inherit;
+ font-size: inherit;
+ position: relative;
+ display: inline-block;
+ letter-spacing: 0.05rem;
+ font-weight: 700;
+ font-size: 17px;
+ border-radius: 500px;
+ overflow: hidden;
+ background: #66ff66;
+ color: ghostwhite !important;
+}
+
+.btn-slide span {
+ position: relative;
+ z-index: 10;
+ transition: color 0.4s;
+}
+
+.btn-slide:hover span {
+ color: black;
+}
+
+.btn-slide::before,
+.btn-slide::after {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ z-index: 0;
+}
+
+.btn-slide::before {
+ content: "";
+ background: #000;
+ width: 120%;
+ left: -10%;
+ transform: skew(30deg);
+ transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.btn-slide:hover::before {
+ transform: translate3d(100%, 0, 0);
+}
+
+
+/* ==== Extend Hover Effects ====*/
+
+/* From Uiverse.io by alexmaracinaru */ 
+.btn-hover-3 {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+  z-index:2;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+
+}
+
+.btn-hover-3:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+  z-index:-1;
+}
+
+.btn-hover-3:hover:before {
+  width: 100%;
+  background: #b1dae7;
+}
+
+.btn-hover-3:active {
+  transform: scale(0.95);
+}
+
+/*====== Button Hover Effects ====== */
+
+
+.btn-hover-2 {
+ display: inline-block;
+ padding: 0.6rem 1rem;
+ font-size: 16px;
+ font-weight: 700;
+ color: rgb(252, 70, 100);
+ border: 3px solid rgb(252, 70, 100);
+ cursor: pointer;
+ position: relative;
+ background-color: transparent;
+ text-decoration: none;
+ overflow: hidden;
+ z-index: 1;
+ font-family: var(--font);
+}
+.btn-hover-2:hover {
+    color:#ffffff;
+}
+
+.btn-hover-2::before {
+ content: "";
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgb(252, 70, 100);
+ transform: translateX(-100%);
+ transition: all .3s;
+ z-index: -1;
+}
+
+.btn-hover-2:hover::before {
+ transform: translateX(0);
+}
+
+/* ==== Button Hover Efcets ===== */
+
+.btn-hover-4{
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border-radius:10px ;
+  border: none;
+  color: #234567;
+  background: rgb(39, 231, 14);
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  scale: 1;
+    &:hover {
+        scale: 1.1;
+    }
+}
+
+/* ====== Button Hover Effects ======= */
+
+
+.btn-hover-5 {
+  background: #a370f0;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.btn-hover-5::before{
+  content:"";
+  background: white;
+  color:#a370f0;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.btn-hover-5:hover:before {
+  content:"Click";
+  font-weight:700;
+  width: calc(100% - 0.6em);
+}
+
+
+.btn-hover-5:active:before{
+  transform: scale(0.95);
+}
+
+
+
